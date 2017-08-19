@@ -1,0 +1,15 @@
+{
+  "name": "locale-formatter",
+  "version": "0.0.1",
+  "description": "Utilitários para formatar valores de acordo com a localidade",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesleyody/locale-formatter.git"
+  },
+  "author": "Wesley <wesleyody@gmail.com>",
+  "license": "MIT"
+}
