@@ -1,0 +1,32 @@
+export const format = value => {
+    if ( !value ) {
+        return "";
+    }
+
+    const cleanValue = value.replace( /[^0-9]+/g, "" );
+
+    if ( cleanValue.length > 2 && cleanValue.length <= 5 ) {
+        return cleanValue.substring( 0, 2 ) + "."
+            + cleanValue.substring( 2 );
+    } else if ( cleanValue.length > 5 && cleanValue.length <= 8 ) {
+        return cleanValue.substring( 0, 2 ) + "."
+            + cleanValue.substring( 2, 5 ) + "."
+            + cleanValue.substring( 5 );
+    } else if ( cleanValue.length > 8 && cleanValue.length <= 12 ) {
+        return cleanValue.substring( 0, 2 ) + "."
+            + cleanValue.substring( 2, 5 ) + "."
+            + cleanValue.substring( 5, 8 ) + "/"
+            + cleanValue.substring( 8 );
+    } else if ( cleanValue.length > 12 && cleanValue.length <= 14 ) {
+        return cleanValue.substring( 0, 2 ) + "."
+            + cleanValue.substring( 2, 5 ) + "."
+            + cleanValue.substring( 5, 8 ) + "/"
+            + cleanValue.substring( 8, 12 ) + "-"
+            + cleanValue.substring( 12 );
+    } else {
+        return cleanValue;
+    }
+
+};
+
+export default format;
