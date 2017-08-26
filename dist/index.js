@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _phoneFormatter = require("./phone/phone-formatter");
+var _phoneFormatter = require("./format/phone/phone-formatter");
 
 Object.defineProperty(exports, "phoneFormatter", {
   enumerable: true,
@@ -13,7 +13,7 @@ Object.defineProperty(exports, "phoneFormatter", {
   }
 });
 
-var _ssnFormatter = require("./ssn/ssn-formatter");
+var _ssnFormatter = require("./format/ssn/ssn-formatter");
 
 Object.defineProperty(exports, "ssnFormatter", {
   enumerable: true,
@@ -22,7 +22,7 @@ Object.defineProperty(exports, "ssnFormatter", {
   }
 });
 
-var _einFormatter = require("./ein/ein-formatter");
+var _einFormatter = require("./format/ein/ein-formatter");
 
 Object.defineProperty(exports, "einFormatter", {
   enumerable: true,
