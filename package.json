@@ -1,6 +1,6 @@
 {
   "name": "locale-formatter",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Utilitários para formatar valores de acordo com a localidade",
   "main": "dist/index.js",
   "scripts": {
