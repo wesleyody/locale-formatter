@@ -13,7 +13,7 @@ export const format = value => {
         return cleanValue.substring( 0, 3 ) + "."
             + cleanValue.substring( 3, 6 ) + "."
             + cleanValue.substring( 6 );
-    } else if ( cleanValue.length === 11 ) {
+    } else if ( cleanValue.length > 9 && cleanValue.length <= 11 ) {
         return cleanValue.substring( 0, 3 ) + "."
             + cleanValue.substring( 3, 6 ) + "."
             + cleanValue.substring( 6, 9 ) + "-"
