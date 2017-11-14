@@ -19,6 +19,8 @@ var format = exports.format = function format(value) {
         return "(" + cleanValue.substring(0, 2) + ") " + cleanValue.substring(2, 6) + "-" + cleanValue.substring(6);
     } else if (cleanValue.length === 11) {
         return "(" + cleanValue.substring(0, 2) + ") " + cleanValue.substring(2, 7) + "-" + cleanValue.substring(7);
+    } else if (cleanValue.length === 13) {
+        return "+" + cleanValue.substring(0, 2) + " (" + cleanValue.substring(2, 4) + ") " + cleanValue.substring(4, 9) + "-" + cleanValue.substring(9);
     } else {
         return cleanValue;
     }
