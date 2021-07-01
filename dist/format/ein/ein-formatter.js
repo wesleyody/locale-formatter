@@ -15,7 +15,9 @@ var factory = function factory(locale) {
         case "pt-BR":
             return _formatter2.default;
         default:
-            return null;
+            return function (value) {
+                return value ? value.replace(/[^0-9]+/g, "") : value;
+            };
     }
 };
 
