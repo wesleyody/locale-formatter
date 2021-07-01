@@ -5,7 +5,7 @@ const factory = locale => {
         case "pt-BR":
             return formatterPtBR;
         default:
-            return null;
+            return value => value ? value.replace( /[^0-9]+/g, "" ) : value;
     }
 };
 
